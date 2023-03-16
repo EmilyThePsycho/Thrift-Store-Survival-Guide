@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>Thrift Store Survival Guide</title>
+<link href="main.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Slabo+13px&display=swap" rel="stylesheet">
+	
+</head>
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #7E1D00; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #590202; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #260101; 
+}
+	body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 99;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 11px;
+  border-radius: 5px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+	
+* {
+  box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+	
+<body>
+	
+	<section class="Survival">
+		<img src="cloud.png" alt="cloud" id="cloud">
+		<img src="thrift.png" alt="thrift" id="thrift">
+		<h2 id="text">Thrift Store Survival Guide</h2>
+		<img src="vine.png" alt="vine" id="vine">
+		<img src="left.png" alt="left" id="left">
+		<img src="right.png" alt="right" id="right">
+	</section>
+	
+	
+	<div class="info">
+	<h1 class="w3-text-teal"><br><strong>What is Thrifting?</strong></h1>
+<p1>If you’ve ever heard someone say they’re going to go thrifting, you might be wondering what they mean. Simply put, thrifting means going shopping at a thrift store, garage sale, or flea market where you’ll find gently used items at discounted prices. Thrifted items have been loved by a previous owner but are usually in good shape with enough life left to be useful to a new owner.There are plenty of people you’ll find at a thrift store, including:Those who prefer a home filled with one-of-a-kind items that create a homey, creative feel Creative dressers who love to experiment with their personal style, smart shoppers who know you can find great things at a much cheaper price, and so many more<br><br>
+<p2><strong>How is a thrift store different from other stores?</strong></p2>
+A thrift store sells gently used clothing, furniture, and other household items at a discounted price. At Goodwill, we receive donations from the community every day, so our shelves are always stocked with tons of unique finds.The big difference between a thrift store and a retail store is that the items for sale at a thrift store aren’t brand new, but that doesn’t mean they aren’t in good condition. Thrift shopping is a way of giving those items new life.Shopping at a thrift store is different from shopping at a retail store. When you go to a thrift store, you don’t necessarily go with a list. Thrift shopping is more about the hunt than locating one particular item. Because thrift stores are full of vintage and off-season goods, it’s fun to see what you might find. You buy whatever appeals to you and what you enjoy! Plus, when you get to the checkout line, you’ll notice your bill is significantly lower than it would be at a retail store.<br><br>
+<p2><strong>What kinds of things can I find at a thrift store?</strong></p2> 
+Some thrift stores only sell clothing, but others, like Goodwill, sell just about anything. The most popular items you’ll find are clothing, shoes, handbags, furniture, household goods and linens, jewelry, art, kitchen supplies, and so much more.<br><br>
+<p2><strong>Why do people like to shop at thrift stores?</strong></p2>
+When you shop at a thrift store, it’s exciting to think about what you might find. The thrill of the hunt is what compels most people to shop at a thrift store. Most thrift store shoppers are also creative people. They’re able to think outside the box to envision a new life for a gently used item. For example, clothing at a thrift store isn’t necessarily in-season, but those who buy clothes at a thrift store are able to get creative to express their own personal style in a way that is relevant to what’s in-season.
+Most thrift store shoppers can get lost in the aisles of a thrift store. the aisles of old books. Clothing racks with vintage designers contain board games that aren’t sold anywhere else anymore. There’s so much to sift through. A thrift store is also a great place to find collectible items, valuable jewelry, and items that you literally can’t find anywhere else.When you’re shopping at Goodwill, you never know what you’ll find. You might walk into a thrift store wanting to look for clothes and leave with a pile of books or a piece of art. If you love the thrill of finding something completely unexpected and unique, then you’ll love shopping at a thrift store.<br><br>
+<p2><strong>When is the best time to shop at a thrift store?</strong></p2>  
+Unlike retail stores that typically have dedicated inventory delivery and stocking days, thrift stores that rely on donations don’t. Thrift stores accept donations any day at any time. Plus, the staff works around the clock to get those donations out on the shelves as quickly as possible. With that being said, there’s really no specific day that’s best to go to a thrift store. However, if you want to be a strategic thrift store shopper, the trick is to go often. Because thrift stores are constantly selling and restocking, you could shop on a Monday and a Friday of the same week and find completely different inventory.Most thrift store shoppers tend to do quick runs every so often when they’re feeling inspired to go on a hunt for unique finds. One day you might not find anything that speaks to you, and another day you might leave with bags of stuff.
+	  </p1>
+	</div>
+	
+	<div class= "timemanagement">
+		<h1><br><br><br><br><br><br><strong>Take your time... but keep a lookout for ambushes</strong></h1>
+<p1>Under normal circumstances, I’m a speed shopper. I have an idea of what I want or might be looking for, at the ready, and know which departments I’m going to hit and the order in which to visit them. Truth be told, I hate shopping. I want to get in and out as quickly as possible. But all these rules I’ve imposed on myself fly out the window when it’s time to thrift because successful thrifting takes time, you are not going to find something in 10 minutes. So pop in your earbuds and be in the mood to rummage.</p1>
+	</div>
+	
+<div class="sections">
+		<h1><br><br><br><br><br><br><strong>Look in all the sections...you will find the unexpected</strong></h1>
+<p1>Typically, the thrift shop is dedicated to racks upon racks of apparel that stretch as far as the eye can see; but, don't ignore the products that border the perimeter. From books and movies to housewares and art, toys and electronics, furniture and board games, and jewellery, you may find something truly unique, plus the best finds are found in the most unexpected places.</p1>
+	</div>
+	
+	<div class="highend">
+		<h1><br><br><br><br><br><br><strong>If you want vintage finds...shop in lesser know neighbourhoods.</strong></h1>
+		<p1>When you have a taste for vintage finds but lack the means or desire to pay the retail price for them, this tip might just be priceless. follow this link to a handy website that shows markings of vintage clothing<br><br>
+		
+		<a class="link" href="https://sammydvintage.com/vintage-style/vintage-clothing-label-tags/"><strong>VISIT VINTAGE LIFE!</strong></a>
+		</p1>
+	</div>
+	
+	<div class="foottraffic">
+		<h1><br><br><br><br><br><br><strong>Go where the others have not... choose your own path</strong></h1>
+		<p1>
+I've had far greater experience buying in the suburbs than in downtown stores, and I believe this is due to less competition from other bargain seekers. Finding an out-of-the-way, a less-travelled secondhand store can pay out in the long run.</p1>
+	</div>
+
+	<div class="consumeandpurge">
+		<h1><br><br><br><br><strong>Consume...purge</strong></h1>
+		<p1>
+Cast a broad net, and toss everything that piques your curiosity into my basket while you browse the clothing racks. Something that looks good on a hanger might look fantastic when styled, and vice versa, so maximize your chances by scooping up as much as you can and saving the duds for later</p1>
+	</div>
+	
+	<div class="Bedecisive">
+		<h1><br><br><br><br><br><br><br><strong>Be decisive...you have to in these enviorments</strong></h1>
+		<p1>
+It may be easier to justify buying something when the sticker price is $3, but if you won't use or wear it, it's a waste regardless of the cost. I've had a couple of "changeroom moments" when I wasn't sure whether to buy or not, and I've definitely bought things in the past that have sat, adored but never worn, in my wardrobe. We all make errors. But one guideline that has served me well over the years is that if you have any doubts about a certain piece of apparel, don't buy it. I've had buyer's remorse but not saver's remorse </p1>
+	</div>
+	
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+ 
+	<div style = "position:absolute; left:0px; top:1794px; width:1520px; background-color: #3D2111;">	
+ <img src="book.png" alt="book" id="book" ; >
+	</div>
+
+	<div style = "position:absolute; left:0px; top:2542px; height:690px;">	
+ <img src="clock.png" alt="clock" id="clock" ; >
+	</div>
+	<div style = "position:absolute; left:0px; top:3190px; height:690px;">	
+ <img src="leaves.png" alt="clock" id="leaf" ; >
+	</div>
+	<div style = "position:absolute; left:0px; top:3190px; height:690px;">	
+ <img src="bi.png" alt="look" id="binaculars" ; >
+	</div>
+	<div style = "position:absolute; left:-500px; top:4030px; height:690px;">	
+ <img src="tag.png" alt="tag" id="tag" ; >
+	</div>
+	<div style = "position:absolute; right:0px; top:4800px; height:490px;">	
+ <img src="path.png" alt="path" id="path" ; >
+	</div>
+	<div style = "position:absolute; left:0px; top:5542px; height:490px;">	
+ <img src="consume.png" alt="consume" id="consume" ; >
+	</div>
+	<div style = "position:absolute; left:0px; top:5570px; height:490px;">	
+ <img src="cvine.png" alt="cvine" id="cvine" ; >
+		<div style = "position:absolute; left:-500px; top:720px; height:490px;">	
+ <img src="post.png" alt="post" id="post" ; >
+	</div>
+</div>
+	
+	<div class="inside"><p> <strong>You come upon a tatered-up book in the middle of the sidewalk on your way to the thrift store. Curiosity gets the best of you, and you decide to bend over and pick it up. As you turn the pages, you discover, much to your astonishment, that it is a survival guide to the thrift store.<br><br>Scroll to see what the book contains!</strong></p></div>
+	
+	<iframe class="song" style="border-radius:12px" src="https://open.spotify.com/embed/track/7bYZBVrnRfqeaPbhRyEvK3?utm_source=generator&theme=0" width="30%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+	
+	<script src="Script.js"></script>
+	
+	<div class="row">
+  <div class="column left" style="background-color:#42210B;" align="center">
+    <h2>Contact Me</h2>
+    <p>Email:Emilysherbert@ocadu.ca</p>
+  </div>
+  <div class="column middle" style="background-color:#C41023;" align="center">
+    <h2>Check out these Websites!</h2>
+  </div>
+  <div class="column right"  style="background-color:#C41023;" >
+    <h2>Additional Thrift Tips </h2>
+	<p><a class="link" target="_blank" href="https://www.takechargeamerica.org/learn-the-dos-and-donts-of-thrift-store-shopping/"><strong>Learn the Do’s and Don’ts of Thrift Store Shopping</strong></a></p>
+	
+	  <p><a class="link" target="_blank" href="https://www.highsnobiety.com/p/thrifting-for-clothes-tips/"><strong>THE ULTIMATE GUIDE TO THRIFTING FOR CLOTHES</strong></a></p>
+	
+	  <p><a class="link" target="_blank" href="https://brightside.me/inspiration-tips-and-tricks/10-tricks-to-make-sure-clothes-will-fit-us-without-trying-them-on-809127/" ><strong>10 Tricks to Make Sure Clothes Will Fit Us Without Trying Them On</strong></a></p> 
+  </div>
+</div>
+	
+<a class="peyak" target="_blank" href="https://github.com/ZaidIrfan2003/Zaid-Irfan-s-Resource-Web-2"><img src="hang-8.png" alt="hanger link." /></a>
+	
+<a class="niso" target="_blank" href="https://danakeselman.github.io/allaboutstationery/index.html"><img src="knife-8.png" alt="hanger link." /></a>
+</body>
+</html>

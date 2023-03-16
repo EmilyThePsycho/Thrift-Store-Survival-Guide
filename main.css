@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+body{
+	background: #C41023;
+	overflow-x:hidden;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	margin: auto
+}
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	z-index: 100;
+}
+
+.Survival{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#text{
+	position: absolute;
+	top: 0px;
+	font-size: 4em;
+	color: azure;
+	text-shadow: 2px 2px 4px rbga(0, 0, 0, .2);
+}
+
+.Survival img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	pointer-events: none;
+}
+
+.info{
+position: relative;
+	background: #4D1900;
+	top: 250px;
+	height: 820px;
+	padding-left: 190px;
+	padding-right: 190px;}
+
+.info p1 {
+	font-size: 16px;
+	color: #fff;
+	font-weight: 300;
+	line-height: 10px;
+	left: 500px;
+	top: 40px;}
+
+.info p2 {
+	font-size: 16px;
+	color: #FEB8A2;
+	font-weight: 300;
+	line-height: 10px;
+	left: 500px;
+	top: 40px;}
+
+.info h1 {
+	font-size: 22px;
+	font-family: 'Slabo 13px', serif;
+	color: #FEB8A2;
+	font-weight: 300;
+	line-height: 20px;
+}
+
+.timemanagement{
+	position: relative;
+	background: #4D1900;
+	top: 990px;
+	height: 752px;
+	padding-left: 860px;
+	padding-right: 40px;
+}
+.timemanagement p1 {
+	font-size: 1em;
+	color: #fff;
+	font-weight: 300;
+	line-height: 12px;
+	left: 500px;
+	top: 40px;
+}
+
+.timemanagement h1 {
+	font-size: 28px;
+	font-family: 'Slabo 13px', serif;
+	color: #fff;
+	font-weight: 300;
+	line-height: 30px;
+	left: 500px;
+}
+
+.sections{
+	position: relative;
+	background: #782301;
+	top: 970px;	
+	height: 762px;
+	padding-left: 40px;
+	padding-right: 1044px;
+}
+.sections p1 {
+	font-size: 1em;
+	color: #fff;
+	font-weight: 300;
+	line-height: 12px;
+	margin-bottom: auto;
+}
+
+.sections h1 {
+	font-size: 28px;
+	font-family: 'Slabo 13px', serif;
+	color: #fff;
+	font-weight: 300;
+	line-height: 30px;
+	left: 500px;}
+
+.highend{
+	position: relative;
+	background:#681F01;
+	top: 950px;
+	height: 742px;
+	padding-left: 848px;
+	padding-right: 40px;
+}
+.highend p1 {
+	font-size: 1em;
+	color: #fff;
+	font-weight: 300;
+	line-height: 12px;
+}
+
+.highend h1 {
+	font-size: 28px;
+	font-family: 'Slabo 13px', serif;
+	color: #fff;
+	font-weight: 300;
+	line-height: 30px;
+	left: 500px;}
+
+.foottraffic{
+	position: relative;
+	background: #782301;
+	top: 930px;	
+	height: 762px;
+	padding-left: 40px;
+	padding-right: 1044px;
+}
+.foottraffic p1 {
+	font-size: 1em;
+	color: #fff;
+	font-weight: 300;
+	line-height: 12px;
+}
+
+.foottraffic h1 {
+	font-size: 28px;
+	font-family: 'Slabo 13px', serif;
+	color: #fff;
+	font-weight: 300;
+	line-height: 30px;
+	left: 500px;}
+
+.consumeandpurge{
+	position: relative;
+	background: #882701;
+	top: 910px;
+	height: 742px;
+	padding-left: 1070px;
+	padding-right: 40px;
+}
+.consumeandpurge p1 {
+	font-size: 1em;
+	color: #fff;
+	font-weight: 300;
+	line-height: 12px;
+}
+
+.consumeandpurge h1 {
+	font-size: 28px;
+	font-family: 'Slabo 13px', serif;
+	color: #fff;
+	font-weight: 300;
+	line-height: 30px;
+	left: 500px;}
+
+.Bedecisive{
+	position: relative;
+	background: #A02D00;
+	top: 890px;
+	height: 742px;
+	padding-left: 848px;
+	padding-right: 40px;
+}
+.Bedecisive p1 {
+	font-size: 1em;
+	color: #fff;
+	font-weight: 300;
+	line-height: 12px;
+}
+
+.Bedecisive h1 {
+	font-size: 28px;
+	font-family: 'Slabo 13px', serif;
+	color: #fff;
+	font-weight: 300;
+	line-height: 30px;
+	left: 500px;}
+
+.inside p{
+	position: absolute;
+	top:2300px;
+    font-size: 20px;
+	font-family: 'Slabo 13px', serif;
+	color: #590202;
+	font-weight: 300;
+	line-height: 30px;
+	left: 330px;
+	right: 450px;
+}
+
+.song{
+	position: absolute;
+	top:3050px;
+	right: 120px;
+}
+
+.link{
+	font-size: 20px;
+	color: #fff;
+	font-weight: 300;
+	line-height: 12px;
+}
+
+.row{
+	position:relative;
+	top: 890px;
+	color: #FEB8A2;
+}
+
+.peyak{
+	position: relative;
+	top: 650px;
+	left: 500px;
+}
+
+.niso{
+	position: relative;
+	top: 670px;
+	left: 550px;
+}
